@@ -81,3 +81,42 @@ def upload_file():
 
 if __name__ == "__main__":
     app.run(debug=True)
+    # Define a route to display the home page
+    @app.route("/home")
+    def home():
+        return render_template('home.html')
+
+    # Define a route to display information about the app
+    @app.route("/about")
+    def about():
+        return render_template('about.html')
+
+    # Define a route to display contact information
+    @app.route("/contact")
+    def contact():
+        return render_template('contact.html')
+
+    # Define a route to display the gallery of uploaded images
+    @app.route("/gallery")
+    def gallery():
+        images = os.listdir(app.config['UPLOAD_FOLDER'])
+        return render_template('gallery.html', images=images)
+
+    # Define a route to handle file deletion
+    @app.route("/delete/<filename>", methods=["POST"])
+    def delete_file(filename):
+        file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+        if os.path.exists(file_path):
+            os.remove(file_path)
+            return render_template('gallery.html', message="File deleted successfully")
+        else:
+            return render_template('gallery.html', message="File not found")
+
+    # Define a route to handle file download
+    @app.route("/download/<filename>")
+    def download_file(filename):
+        file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+        if os.path.exists(file_path):
+            return send_file(file_path, as_attachment=True)
+        else:
+            return render_template('gallery.html', message="File not found")
