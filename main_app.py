@@ -38,9 +38,7 @@ disease_solutions = {
         'detailed_solution': 'Common rust in corn is a fungal disease that causes yellowish to orange pustules on the leaves. Use resistant varieties, apply fungicides such as tebuconazole, and remove any infected leaves to prevent the spread of the disease.'
     },
       'Brinjal Bright': {
-        'fertilizer': 'Apply high-phosphorus fertilizers to boost the plant’s resistance.',
-        'detailed_solution': 'Common rust in brinjal is a microbe disease that causes yellowish to orange pustules on the leaves. Use resistant varieties, apply fungicides such as tebuconazole, and remove any infected leaves to prevent the spread of the disease.'
-    },
+       
    
     
 
