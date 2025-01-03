@@ -37,9 +37,6 @@ disease_solutions = {
         'fertilizer': 'Apply high-phosphorus fertilizers to boost the plant’s resistance.',
         'detailed_solution': 'Common rust in corn is a fungal disease that causes yellowish to orange pustules on the leaves. Use resistant varieties, apply fungicides such as tebuconazole, and remove any infected leaves to prevent the spread of the disease.'
     },
-      'Brinjal Bright': {
-       
-   
     
 
 def allowed_file(filename):
