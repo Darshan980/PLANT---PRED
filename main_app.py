@@ -39,7 +39,7 @@ disease_solutions = {
     },
     {
            'cucumber-Common_rust': {
-        'fertilizer': 'Apply high-phosphorus fertilizers to boost the plant’s resistance.',
+       
         
         
     
