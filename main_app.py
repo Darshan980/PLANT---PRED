@@ -43,7 +43,7 @@ disease_solutions = {
     },
       'brinjal-tenu_rust': {
         'fertilizer': 'Apply high nitrogen fertilizers to boost the plant’s resistance.',
-        'detailed_solution': 'Common rust in brinjal is a  disease that causes green to blue pustules on the leaves. Use resistant varieties, apply fungicides such as tebuconazole, and remove any infected leaves to prevent the spread of the disease.'
+        'detailed_solution': 'Common rust in brinjal is a  disease that causes green to blue pustules on the leaves. Use resistant varieties, apply fungicides such as febulozole, and remove any infected leaves to prevent the spread of the disease.'
     },    
         
 
